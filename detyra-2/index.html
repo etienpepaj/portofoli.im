@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <!-- <script src="index.js"></script> -->
+    <script src="https://kit.fontawesome.com/90ca6bd78e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+
+            <div class="login">
+                <h1 class="yeat">Login Form</h1>
+            </div>
+
+            <form class="gunna" id="login-form">
+                <div class="drake">
+                    <div class="user-email">
+                        <div class="icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <input type="text" id="username" name="username" placeholder="Email or Phone" class="buta">
+                    </div>
+                    
+                    <div class="user-password">
+                        <div class="icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <input type="password" id="password" name="password" placeholder="Password" class="buta">
+                    </div>
+                    <h2><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUOcmljayByb2xsIHNvbmc%3D">Forgot Password?</a></h2>
+                    <div class="login-btn">
+                        <button onclick="login(event)" class="btn">Login</button>
+                    </div>
+                    <div class="sign-btn">
+                        <h2>Not a member?<span></span><a href="#">Signup Now.</a></h2>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function login(event) {
+          event.preventDefault(); // prevent form submission
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          console.log("Username: " + username + "\nPassword: " + password);
+        }
+      </script>
+</body>
+</html>
